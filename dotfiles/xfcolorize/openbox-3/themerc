@@ -1,0 +1,141 @@
+# Name: Numix Openbox theme
+# Author: Satyajit Sahoo <satyajit.happy@gmail.com>
+# License: GPL-3.0+
+
+
+# Menu
+menu.border.color: #cbbdbd
+
+menu.title.bg: flat solid
+menu.title.bg.color: #49403b
+menu.title.text.color: #cbbdbd
+menu.title.text.justify: center
+
+menu.items.bg: flat solid
+menu.items.bg.color: #49403b
+menu.items.text.color: #cbbdbd
+menu.items.disabled.text.color: #ababab
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #49403b
+menu.items.active.text.color: #FFFFFF
+
+menu.separator.color: #3A3A3A
+menu.separator.width: 1
+menu.*.padding.width: 3
+menu.*.padding.height: 3
+
+
+# Active window
+window.active.border.color: #cbbdbd
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #cbbdbd
+window.active.title.separator.color: #cbbdbd
+window.active.text.justify: center
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #cbbdbd
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #cbbdbd
+
+window.active.grip.bg: flat solid
+window.active.grip.bg.color: #cbbdbd
+
+window.active.button.unpressed.bg: flat solid
+window.active.button.unpressed.bg.color: #FFFFFF
+window.active.button.unpressed.image.color: #fff
+
+window.active.button.pressed.bg: flat solid
+window.active.button.pressed.bg.color: #FFFFFF
+window.active.button.pressed.image.color: #49AEEB
+
+window.active.button.disabled.bg: flat solid
+window.active.button.disabled.bg.color: #FFFFFF
+window.active.button.disabled.image.color: #fff
+
+
+# Inactive window
+window.inactive.border.color: #cbbdbd
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #cbbdbd
+window.inactive.title.separator.color: #cbbdbd
+window.inactive.text.justify: center
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #cbbdbd
+
+window.inactive.handle.bg: flat solid
+
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #cbbdbd
+
+window.inactive.button.unpressed.bg: flat solid
+window.inactive.button.unpressed.bg.color: #FFFFFF
+window.inactive.button.unpressed.image.color: #ddd
+
+window.inactive.button.pressed.bg: flat solid
+window.inactive.button.pressed.bg.color: #FFFFFF
+window.inactive.button.pressed.image.color: #65BDF0
+
+window.inactive.button.disabled.bg: flat solid
+window.inactive.button.disabled.bg.color: #FFFFFF
+window.inactive.button.disabled.image.color: #D0D0D0
+
+
+# OSD
+osd.border.width: 1
+osd.border.color: #2d2d2d
+
+osd.bg: flat solid
+osd.bg.color: #FFFFFF
+
+osd.label.bg: flat solid
+osd.label.bg.color: #dedede
+osd.label.text.color: #555555
+
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #49AEEB
+
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #888888
+
+osd.button.unpressed.bg: flat border 
+osd.button.unpressed.bg.color: #f0f0f0
+osd.button.unpressed.*.border.color: #b2b2b2
+
+osd.button.pressed.bg: flat border 
+osd.button.pressed.bg.color: #d3d3d3
+osd.button.pressed.*.border.color: #b2b2b2
+
+osd.button.focused.bg: flat solid border 
+osd.button.focused.bg.color: #f0f0f0
+osd.button.focused.*.border.color: #9c9c9c
+
+osd.button.focused.box.color: #49AEEB
+
+
+# Fonts
+window.active.label.text.font:shadow=n
+window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
+
+
+# Everything else
+#menu.border.width: 5
+#menu.items.padding.width: 5
+#padding.width: 8
+padding.height: 1
+window.handle.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+padding.width: 7
+padding.height: 7
+window.active.title.padding.width: 0
+window.label.text.justify: left
+#menu.*.border.width: 0
+menu.*.padding.width: 3
+border.width: 5

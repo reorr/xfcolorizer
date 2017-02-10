@@ -1,0 +1,105 @@
+style "darkback"
+    {
+          engine "pixmap"
+            {         
+                   image
+                   {
+                            function =  SHADOW
+                            file = ".trans_bg.png"
+                            border = {0, 0, 0, 0}
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   =PRELIGHT
+                            file                    = ".trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   = ACTIVE
+                            file                    = ".trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            file                    = ".trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+
+            }
+#            bg[NORMAL] = "#1F2322"
+#            bg[NORMAL] = "#5D8E58"
+            bg[NORMAL] = "#1F4634"
+            bg[ACTIVE] = "#1F4634"
+            bg[PRELIGHT] = "#1F4634"
+            fg[NORMAL] = "#ECF0F1"
+            fg[ACTIVE] = "#ECF0F1"
+            fg[PRELIGHT] = "#ECF0F1"
+            fg[INSENSITIVE] = "#ECF0F1"
+
+    }
+widget "whiskermenu-window*" style "darkback"
+
+
+style "darktree"
+{
+	base[NORMAL] = "#1F4634"
+	base[ACTIVE] = "#BB6368"
+    text[NORMAL] = "#ECF0F1"
+	text[ACTIVE] = "#FFFFFF"
+	engine "pixmap"
+            {         
+                   image
+                   {
+                            function =  SHADOW
+                            file = ".trans_bg.png"
+                            border = {0, 0, 0, 0}
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   =PRELIGHT
+                            file                    = ".trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   = ACTIVE
+                            file                    = ".trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+
+        }
+}
+widget "whiskermenu-window*TreeView*" style "darktree"
+
+style "darkentry"
+{
+        bg_pixmap[NORMAL] = ".trans_bg.png"
+        base[NORMAL] = "#1F4634"
+        base[ACTIVE] = "#1F4634"
+        text[NORMAL] = "#ECF0F1"
+        text[ACTIVE] = "#ECF0F1"
+}
+widget "whiskermenu-window*GtkEntry*" style "darkentry"
+
+widget "orage*" style "darkback"
