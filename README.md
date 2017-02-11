@@ -12,6 +12,7 @@ Requirements
  - inkscape
  - python3
  - colorthief
+
 You can install colorthief using ``pip install colorthief`` command.
 
 Usage
