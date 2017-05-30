@@ -34,8 +34,20 @@ Example
 This is the example screenshot image of generated theme
 
 ![Generated theme 
-1](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-02-11-133008_1280x800_scrot.png)
+1](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-141559_1280x800_scrot.png)
 
 ![Generated theme 
-2](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-02-11-134751_1280x800_scrot.png)
+2](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-152335_1280x800_scrot.png)
+
+![Generated theme 
+3](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-152745_1280x800_scrot.png)
+
+![Generated theme 
+4](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-144231_1280x800_scrot.png)
+
+![Generated theme 
+5](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-144647_1280x800_scrot.png)
+
+![Generated theme 
+6](https://github.com/reorr/xfcolorizer/raw/master/screenshot/2017-05-30-145203_1280x800_scrot.png)
 

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=xfcolorize
+Comment=Windows Like - autocolor
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=xfcolorize
+MetacityTheme=xfcolorize
+ButtonLayout=:minimize,maximize,close

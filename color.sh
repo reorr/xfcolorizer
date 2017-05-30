@@ -1,9 +1,9 @@
 #!/bin/bash
 directory=$HOME'/.themes/xfcolorize/'
 
-last_window_color=BABCB6
-last_ancent_color=92664A
-last_ancent2_color=3C302A
+last_window_color=354283
+last_ancent_color=D997AE
+last_ancent2_color=76A9C9
 
 new_window_color=$1
 new_ancent_color=$2
