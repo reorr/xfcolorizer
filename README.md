@@ -35,7 +35,7 @@ This is the example screenshot image of generated theme
 
 ![Generated theme 
 1](https://github.com/reorr/xfcolorizer/raw/master/screenshots/2017-05-30-141559_1280x800_scrot.png)
-s
+
 ![Generated theme 
 2](https://github.com/reorr/xfcolorizer/raw/master/screenshots/2017-05-30-152335_1280x800_scrot.png)
 
