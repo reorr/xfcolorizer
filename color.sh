@@ -1,9 +1,9 @@
 #!/bin/bash
 directory=$HOME'/.themes/xfcolorize/'
 
-last_window_color=1F4634
-last_ancent_color=BB6368
-last_ancent2_color=4E9B71
+last_window_color=BABCB6
+last_ancent_color=92664A
+last_ancent2_color=3C302A
 
 new_window_color=$1
 new_ancent_color=$2
@@ -26,10 +26,15 @@ find "$directory"xfwm4/ -type f -exec sed -i s/"$last_window_color"/"$new_window
 
 echo Changing GTK ancent color
 find "$directory"gtk-2.0/ -type f -exec sed -i s/"$last_window_color"/"$new_window_color"/g {} \;
+sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gnome-shell/gnome-shell.css
 sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/gtk.css
 sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.20/gtk.css
 sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.22/gtk.css
+sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.0/gtk.css
+sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.20/gtk.css
+sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.22/gtk.css
 sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/assets_fix.svg
+sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/3rd-party.rc
 sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/assets_fix.svg
 
 echo Changing termite background color

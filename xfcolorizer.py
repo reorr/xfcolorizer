@@ -37,7 +37,7 @@ if args.image[0]:
 				init_file.close()
 				subprocess.Popen( [ 'chmod', '+x', './color.sh' ] )
 				subprocess.Popen( [ 'chmod', '+x', './wallpaper.sh' ] )
-				output = subprocess.call(['./color.sh ', new_palette[0], new_palette[1], new_palette[2]])
+				output = subprocess.call(['./color.sh', new_palette[0], new_palette[1], new_palette[2]])
 				output = subprocess.call("./wallpaper.sh")
 	else:
 		new_palette = list()
