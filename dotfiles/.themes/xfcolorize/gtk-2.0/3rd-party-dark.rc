@@ -340,3 +340,107 @@ widget "*libreoffice-toplevel*GtkMenuBar"              style "menubar_libreoffic
 widget "*libreoffice-toplevel*GtkMenuBar.*GtkMenuItem" style "menubar_item_libreoffice"
 # widget "*libreoffice-toplevel*GtkEntry"      style "libreoffice_entry"
 # widget "*libreoffice-toplevel*GtkSpinButton" style "libreoffice_entry"
+
+style "darkback"
+    {
+          engine "pixmap"
+            {         
+                   image
+                   {
+                            function =  SHADOW
+                            file = "Others/.trans_bg.png"
+                            border = {0, 0, 0, 0}
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   =PRELIGHT
+                            file                    = "Others/.trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   = ACTIVE
+                            file                    = "Others/.trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            file                    = "Others/.trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+
+            }
+#            bg[NORMAL] = "#1F2322"
+#            bg[NORMAL] = "#5D8E58"
+            bg[NORMAL] = "#322F22"
+            bg[ACTIVE] = "#322F22"
+            bg[PRELIGHT] = "#322F22"
+            fg[NORMAL] = "#ECF0F1"
+            fg[ACTIVE] = "#ECF0F1"
+            fg[PRELIGHT] = "#ECF0F1"
+            fg[INSENSITIVE] = "#ECF0F1"
+
+    }
+widget "whiskermenu-window*" style "darkback"
+
+
+style "darktree"
+{
+  base[NORMAL] = "#322F22"
+  base[ACTIVE] = "#C5A68E"
+    text[NORMAL] = "#ECF0F1"
+  text[ACTIVE] = "#FFFFFF"
+  engine "pixmap"
+            {         
+                   image
+                   {
+                            function =  SHADOW
+                            file = "Others/.trans_bg.png"
+                            border = {0, 0, 0, 0}
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   =PRELIGHT
+                            file                    = "Others/.trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+                    }
+                    image
+                    {
+                            function                = BOX
+                            recolorable             = FALSE
+                            state                   = ACTIVE
+                            file                    = "Others/.trans_bg.png"
+                            border                  = { 0, 0, 0, 0 }
+                            stretch                 = FALSE
+
+                    }
+
+        }
+}
+widget "whiskermenu-window*TreeView*" style "darktree"
+
+style "darkentry"
+{
+        bg_pixmap[NORMAL] = "Others/.trans_bg.png"
+        base[NORMAL] = "#322F22"
+        base[ACTIVE] = "#C5A68E"
+        text[NORMAL] = "#ECF0F1"
+        text[ACTIVE] = "#ECF0F1"
+}
+widget "whiskermenu-window*GtkEntry*" style "darkentry"

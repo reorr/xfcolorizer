@@ -11,7 +11,7 @@ style "default" {
   #
   # Style Properties
   #
-  GtkWidget::link-color = "#354283"
+  GtkWidget::link-color = "#322F22"
   GtkWidget::visited-link-color = "#82A1FF"
   GtkWidget::focus-line-width = 0
   GtkWidget::focus-padding = 2
@@ -902,7 +902,7 @@ style "scrollbar" {
 style "entry" {
   xthickness = 6
   ythickness = 6
-    bg[NORMAL] = "#354283"
+    bg[NORMAL] = "#322F22"
   engine "pixmap" {
     image {
       function = SHADOW
@@ -951,7 +951,7 @@ style "entry" {
 
 style "notebook_entry" {
 
-  bg[NORMAL] = "#354283"
+  bg[NORMAL] = "#322F22"
   bg[ACTIVE] = @bg_color
   bg[INSENSITIVE] = @bg_color
 
@@ -1575,7 +1575,7 @@ style "menubar" {
   xthickness = 0
   ythickness = 0
 
-  bg[NORMAL] = "#354283"
+  bg[NORMAL] = "#322F22"
 #  fg[NORMAL] = mix(0.8, @selected_fg_color, shade(0.96, @fg_color))
   fg[NORMAL] = @selected_fg_color
   fg[PRELIGHT] = @selected_fg_color

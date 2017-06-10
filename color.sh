@@ -1,9 +1,9 @@
 #!/bin/bash
 directory=$HOME'/.themes/xfcolorize/'
 
-last_window_color=354283
-last_ancent_color=D997AE
-last_ancent2_color=76A9C9
+last_window_color=322F22
+last_ancent_color=C5A68E
+last_ancent2_color=84A271
 
 new_window_color=$1
 new_ancent_color=$2
@@ -19,7 +19,7 @@ ASSETS_DIR22="$directory"gtk-3.22/assets
 INDEX="$directory"gtk-3.0/assets.txt
 WM_LIST="$directory"xfwm4/list.txt
 RM_ASSETS_GTK_3="$directory"gtk-3.0/rm_assets.txt
-RM_ASSETS_GTK_2="$directory"gtk-2.0/rm_assets.txt
+RM_ASSETS_GTK_2="$directory"gtk-2.0/rm_assets.txtdwaaw
 
 echo Changing window color
 find "$directory"xfwm4/ -type f -exec sed -i s/"$last_window_color"/"$new_window_color"/g {} \;

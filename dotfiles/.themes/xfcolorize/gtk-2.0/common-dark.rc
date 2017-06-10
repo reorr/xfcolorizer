@@ -11,7 +11,7 @@ style "default" {
   #
   # Style Properties
   #
-  GtkWidget::link-color = "#03A9F4"
+  GtkWidget::link-color = "#322F22"
   GtkWidget::visited-link-color = "#9C27B0"
   GtkWidget::focus-line-width = 1
   GtkWidget::focus-padding = 1
@@ -1576,7 +1576,7 @@ style "menubar" {
   xthickness = 0
   ythickness = 0
 
-  bg[NORMAL] = "#2A373E"
+  bg[NORMAL] = "#13191C"
   fg[NORMAL] = mix(0.8, @selected_fg_color, shade(0.96, @bg_color))
   fg[PRELIGHT] = @selected_fg_color
   fg[INSENSITIVE] = mix(0.4, @selected_fg_color, @bg_color)

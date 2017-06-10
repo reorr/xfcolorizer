@@ -5,7 +5,7 @@ style "theme-panel" {
   xthickness = 0
   ythickness = 0
 
-  bg[NORMAL] = "#354283"
+  bg[NORMAL] = "#322F22"
   bg[ACTIVE] = @selected_bg_color
   bg[PRELIGHT] = shade(1.1, @selected_bg_color)
   bg[SELECTED] = @selected_bg_color
@@ -384,9 +384,9 @@ style "darkback"
             }
 #            bg[NORMAL] = "#1F2322"
 #            bg[NORMAL] = "#5D8E58"
-            bg[NORMAL] = "#354283"
-            bg[ACTIVE] = "#354283"
-            bg[PRELIGHT] = "#354283"
+            bg[NORMAL] = "#322F22"
+            bg[ACTIVE] = "#322F22"
+            bg[PRELIGHT] = "#322F22"
             fg[NORMAL] = "#ECF0F1"
             fg[ACTIVE] = "#ECF0F1"
             fg[PRELIGHT] = "#ECF0F1"
@@ -398,8 +398,8 @@ widget "whiskermenu-window*" style "darkback"
 
 style "darktree"
 {
-	base[NORMAL] = "#354283"
-	base[ACTIVE] = "#D997AE"
+	base[NORMAL] = "#322F22"
+	base[ACTIVE] = "#C5A68E"
   	text[NORMAL] = "#ECF0F1"
 	text[ACTIVE] = "#FFFFFF"
 	engine "pixmap"
@@ -438,8 +438,8 @@ widget "whiskermenu-window*TreeView*" style "darktree"
 style "darkentry"
 {
         bg_pixmap[NORMAL] = "Others/.trans_bg.png"
-        base[NORMAL] = "#354283"
-        base[ACTIVE] = "#D997AE"
+        base[NORMAL] = "#322F22"
+        base[ACTIVE] = "#C5A68E"
         text[NORMAL] = "#ECF0F1"
         text[ACTIVE] = "#ECF0F1"
 }

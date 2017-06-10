@@ -1,7 +1,7 @@
 # so-black xfwm theme by Muktazam Hasbi Ashidiqi (reorr).
 
-active_text_color=#354283
-inactive_text_color=#354283
+active_text_color=#322F22
+inactive_text_color=#322F22
 button_offset=0
 button_spacing=0
 full_width_title=true
