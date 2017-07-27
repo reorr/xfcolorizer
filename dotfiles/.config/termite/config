@@ -1,0 +1,87 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Roboto Mono Medium 7
+scrollback_lines = 10000
+search_wrap = true
+#icon_name = terminal
+geometry = 600x300
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# set size hints for the window
+#size_hints = false
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+[colors]
+#cursor = #dcdccc
+foreground = #FFFFFF
+foreground_bold = #DDDDDD
+background = #window_color
+
+# if unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# black
+color0  = #1d241a
+color8 = #35422f
+
+# red
+color1  = #c14d38
+color9  = #c14d38
+
+# green
+color2  = #a0ce52
+color10  = #a0ce52
+
+# yellow
+color3  = #be9e61
+color11 = #be9e61
+
+# blue
+color4  = #4c7e89
+color12 = #4c7e89
+
+# magenta
+color5  = #814d61
+color13 = #814d61
+
+# cyan
+color6  = #79a69d
+color14 = #79a69d
+
+# white
+color7  = #bcbebb
+color15 = #bcbebb
+
+
+[hints]
+#font = Monospace 11
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+padding = 2
+#border = #3f3f3f
+border_width = 1
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
