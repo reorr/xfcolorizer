@@ -1,10 +1,6 @@
 #!/bin/bash
 directory=$HOME'/.themes/xfcolorize/'
 
-last_window_color=322F22
-last_ancent_color=C5A68E
-last_ancent2_color=84A271
-
 new_window_color=$1
 new_ancent_color=$2
 new_ancent2_color=$3
@@ -19,44 +15,47 @@ ASSETS_DIR22="$directory"gtk-3.22/assets
 INDEX="$directory"gtk-3.0/assets.txt
 WM_LIST="$directory"xfwm4/list.txt
 RM_ASSETS_GTK_3="$directory"gtk-3.0/rm_assets.txt
-RM_ASSETS_GTK_2="$directory"gtk-2.0/rm_assets.txtdwaaw
+RM_ASSETS_GTK_2="$directory"gtk-2.0/rm_assets.txt
+
+echo Removing Theme Files
+rm -rf $directory
+
+echo Copying Theme Files
+cp -r dotfiles/.themes/xfcolorize/ $HOME'/.themes/'
 
 echo Changing window color
-find "$directory"xfwm4/ -type f -exec sed -i s/"$last_window_color"/"$new_window_color"/g {} \;
+find "$directory"xfwm4/ -type f -exec sed -i s/"window_color"/"$new_window_color"/g {} \;
 
 echo Changing GTK ancent color
-find "$directory"gtk-2.0/ -type f -exec sed -i s/"$last_window_color"/"$new_window_color"/g {} \;
-sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gnome-shell/gnome-shell.css
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/gtk.css
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.20/gtk.css
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.22/gtk.css
-sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.0/gtk.css
-sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.20/gtk.css
-sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"gtk-3.22/gtk.css
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/assets_fix.svg
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/3rd-party.rc
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/assets_fix.svg
+find "$directory"gtk-2.0/ -type f -exec sed -i s/"window_color"/"$new_window_color"/g {} \;
+sed -i s/"window_color"/"$new_window_color"/g "$directory"gnome-shell/gnome-shell.css
+sed -i s/"ancent_color"/"$new_window_color"/g "$directory"gnome-shell/gnome-shell.css
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/gtk.css
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.20/gtk.css
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.22/gtk.css
+sed -i s/"window_color"/"$new_window_color"/g "$directory"gtk-3.0/gtk.css
+sed -i s/"window_color"/"$new_window_color"/g "$directory"gtk-3.20/gtk.css
+sed -i s/"window_color"/"$new_window_color"/g "$directory"gtk-3.22/gtk.css
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/assets_fix.svg
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-2.0/3rd-party.rc
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$directory"gtk-3.0/assets_fix.svg
 
 echo Changing termite background color
-sed -i s/"$last_window_color"/"$new_window_color"/g "$HOME"/.config/termite/config
+sed -i s/"window_color"/"$new_window_color"/g "$HOME"/.config/termite/config
 
 echo Changing wishker menu color
-sed -i s/"$last_window_color"/"$new_window_color"/g "$HOME"/.gtkrc-2.0.mine
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g "$HOME"/.gtkrc-2.0.mine
+sed -i s/"window_color"/"$new_window_color"/g "$HOME"/.gtkrc-2.0.mine
+sed -i s/"ancent_color"/"$new_ancent_color"/g "$HOME"/.gtkrc-2.0.mine
 
 echo Changing notification color
-find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"$last_window_color"/"$new_window_color"/g {} \;
-find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"$last_ancent_color"/"$new_ancent_color"/g {} \;
-find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"$last_ancent2_color"/"$new_ancent2_color"/g {} \;
+find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"window_color"/"$new_window_color"/g {} \;
+find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"ancent_color"/"$new_ancent_color"/g {} \;
+find "$directory"xfce-notify-4.0/ -type f -exec sed -i s/"ancent2_color"/"$new_ancent2_color"/g {} \;
 
 for wmwm in `cat $WM_LIST`
 do
-	sed -i s/"$last_window_color"/"$new_window_color"/g "$directory"xfwm4/$wmwm
+	sed -i s/"window_color"/"$new_window_color"/g "$directory"xfwm4/$wmwm
 done
-
-sed -i s/"$last_window_color"/"$new_window_color"/g color.sh
-sed -i s/"$last_ancent_color"/"$new_ancent_color"/g color.sh
-sed -i s/"$last_ancent2_color"/"$new_ancent2_color"/g color.sh
 
 echo Rendering assets
 for assets_del in `cat $RM_ASSETS_GTK_3`
