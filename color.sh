@@ -22,6 +22,7 @@ rm -rf $directory
 
 echo Copying Theme Files
 cp -r dotfiles/.themes/xfcolorize/ $HOME'/.themes/'
+cp -r dotfiles/.config/termite/ $HOME'/.config/'
 
 echo Changing window color
 find "$directory"xfwm4/ -type f -exec sed -i s/"window_color"/"$new_window_color"/g {} \;
