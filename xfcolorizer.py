@@ -3,7 +3,7 @@ import argparse, subprocess, os
 from colorthief import ColorThief
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--image','-i', required=True, help='set image to wallpaperpaper and generate palette from image', nargs='*')
+parser.add_argument('--image','-i', required=True, help='set image to wallpaper and generate palette from image', nargs='*')
 parser.add_argument('--window','-w', help='set window color and panel color from given value (hex)', nargs='*')
 args = parser.parse_args()
 #img = (args.image[0])
@@ -31,7 +31,7 @@ if args.image[0]:
 				print("Color can't be same")
 			else :
 				init_file = open( 'wallpaper.sh', 'w' )
-				init_file.writelines( [ '#!/bin/bash\n', 'wallpaperpaper=' + args.image[0] + '&&'] )
+				init_file.writelines( [ '#!/bin/bash\n', 'wallpaper=' + args.image[0] + '&&'] )
 				init_file.writelines( [ 'properties=$(xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '/backdrop ', '-l ', '| ', 'grep ', '-e ', '"screen.*/monitor.*image-path$" ', '-e ', '"screen.*/monitor.*/last-image$") ', '&& '])
 				init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaperpaper"; ', 'done'])
 				init_file.close()
@@ -47,7 +47,7 @@ if args.image[0]:
 		else :
 			#print(new_palette)
 			init_file = open( 'wallpaper.sh', 'w' )
-			init_file.writelines( [ '#!/bin/bash\n', 'wallpaperpaper=' + args.image[0] + '&&'] )
+			init_file.writelines( [ '#!/bin/bash\n', 'wallpaper=' + args.image[0] + '&&'] )
 			init_file.writelines( [ 'properties=$(xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '/backdrop ', '-l ', '| ', 'grep ', '-e ', '"screen.*/monitor.*image-path$" ', '-e ', '"screen.*/monitor.*/last-image$") ', '&& '])
 			init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaperpaper"; ', 'done'])
 			init_file.close()
