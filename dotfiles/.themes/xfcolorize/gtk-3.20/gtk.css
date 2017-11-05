@@ -1642,8 +1642,7 @@ toolbar {
   -GtkWidget-window-dragging: true;
   padding: 0.3985rem;
   background-color: #fafbfc;
-  color: rgba(38, 50, 56, 0.75);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.18), inset 0 4px 2px -4px rgba(0, 0, 0, 0.2), inset 0 8px 3px -5px rgba(0, 0, 0, 0.24); }
+  color: rgba(38, 50, 56, 0.75); }
   toolbar.vertical, .inline-toolbar toolbar, paned toolbar, paned toolbar.primary-toolbar, grid toolbar.primary-toolbar {
     box-shadow: none; }
   .osd toolbar {
@@ -2696,10 +2695,9 @@ headerbar {
   border-width: 1px 0 1px;
   border-style: solid;
   border-top-color: #window_color;
-  border-bottom-color: #242F35; }
+  border-bottom-color: #window_color; }
   headerbar.titlebar, .csd headerbar, box headerbar:only-child {
-    padding: 0.3985rem;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.26), 0 2px 3px rgba(0, 0, 0, 0.32); }
+    padding: 0.3985rem;}
   box headerbar:not(:only-child):first-child, box headerbar:not(:only-child):last-child {
     border-left-color: #window_color;
     border-right-color: #window_color; }
@@ -2909,7 +2907,6 @@ column-header.button.dnd, treeview.view header.dnd, .tweak-category header.dnd {
 menubar {
   -GtkWidget-window-dragging: true;
   padding: 0;
-  box-shadow: inset 0 2px 2px -3px rgba(0, 0, 0, 0.26), inset 0 5px 3px -5px rgba(0, 0, 0, 0.39), inset 0 -1px rgba(0, 0, 0, 0.09);
   background-color: #window_color;
   color: rgba(236, 239, 241, 0.75); }
   .tiled .menubar, .maximized .menubar, .tiled
