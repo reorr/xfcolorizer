@@ -49,7 +49,7 @@ if args.image[0]:
 			init_file = open( 'wallpaper.sh', 'w' )
 			init_file.writelines( [ '#!/bin/bash\n', 'wallpaper=' + args.image[0] + '&&'] )
 			init_file.writelines( [ 'properties=$(xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '/backdrop ', '-l ', '| ', 'grep ', '-e ', '"screen.*/monitor.*image-path$" ', '-e ', '"screen.*/monitor.*/last-image$") ', '&& '])
-			init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaperpaper"; ', 'done'])
+			init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaper"; ', 'done'])
 			init_file.close()
 			subprocess.Popen( [ 'chmod', '+x', './color.sh' ] )
 			subprocess.Popen( [ 'chmod', '+x', './wallpaper.sh' ] )
