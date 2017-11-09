@@ -12,7 +12,7 @@ def rgb_to_hex(rgb):
 	return '%02x%02x%02x' % rgb
 
 if args.image[0]:
-	wallpaperpaper=(args.image[0])
+	wallpaper=(args.image[0])
 	print ("Generating palette color")
 	color_thief = ColorThief(args.image[0])
 	#dominant_color = color_thief.get_color(quality=1)
@@ -31,9 +31,9 @@ if args.image[0]:
 				print("Color can't be same")
 			else :
 				init_file = open( 'wallpaper.sh', 'w' )
-				init_file.writelines( [ '#!/bin/bash\n', 'wallpaper=' + args.image[0] + '&&'] )
+				init_file.writelines( [ '#!/bin/bash\n', 'echo ', 'Applying ', 'wallpaper\n', 'wallpaper=' + args.image[0] + '&&'] )
 				init_file.writelines( [ 'properties=$(xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '/backdrop ', '-l ', '| ', 'grep ', '-e ', '"screen.*/monitor.*image-path$" ', '-e ', '"screen.*/monitor.*/last-image$") ', '&& '])
-				init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaperpaper"; ', 'done'])
+				init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaper"; ', 'done'])
 				init_file.close()
 				subprocess.Popen( [ 'chmod', '+x', './color.sh' ] )
 				subprocess.Popen( [ 'chmod', '+x', './wallpaper.sh' ] )
@@ -47,7 +47,7 @@ if args.image[0]:
 		else :
 			#print(new_palette)
 			init_file = open( 'wallpaper.sh', 'w' )
-			init_file.writelines( [ '#!/bin/bash\n', 'wallpaper=' + args.image[0] + '&&'] )
+			init_file.writelines( [ '#!/bin/bash\n', 'echo ', 'Applying ', 'wallpaper\n', 'wallpaper=' + args.image[0] + '&&'] )
 			init_file.writelines( [ 'properties=$(xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '/backdrop ', '-l ', '| ', 'grep ', '-e ', '"screen.*/monitor.*image-path$" ', '-e ', '"screen.*/monitor.*/last-image$") ', '&& '])
 			init_file.writelines( [ 'for ', 'property ', 'in ', '$properties; ', 'do ', 'xfconf-query ', '-c ', 'xfce4-desktop ', '-p ', '$property ', '-s ', '"$wallpaper"; ', 'done'])
 			init_file.close()

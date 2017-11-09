@@ -102,7 +102,7 @@ done
 cp "$ASSETS_DIR"/* "$ASSETS_DIR20"/
 cp "$ASSETS_DIR"/* "$ASSETS_DIR22"/
 
-echo Appliying theme
+echo Applying theme
 xfconf-query -c xfwm4 -p /general/theme -s "adwaita"
 xfconf-query -c xfwm4 -p /general/theme -s "xfcolorize"
 xfconf-query -c xsettings -p /Net/ThemeName -s "adwaita"
