@@ -1,2 +1,2 @@
 #!/bin/bash
-wallpaper=/home/lemone/Pictures/bg/kartun/Konachan.com - 237170 sample.jpg&&properties=$(xfconf-query -c xfce4-desktop -p /backdrop -l | grep -e "screen.*/monitor.*image-path$" -e "screen.*/monitor.*/last-image$") && for property in $properties; do xfconf-query -c xfce4-desktop -p $property -s "$wallpaperpaper"; done
+wallpaper=/home/lemone/Pictures/bg/solidbg/1502226399429.png&&properties=$(xfconf-query -c xfce4-desktop -p /backdrop -l | grep -e "screen.*/monitor.*image-path$" -e "screen.*/monitor.*/last-image$") && for property in $properties; do xfconf-query -c xfce4-desktop -p $property -s "$wallpaper"; done
